@@ -46,10 +46,10 @@ void loop(){
     delay(200);
     distanceLeft = lookLeft();
     delay(200);
-    if (distanceRight <= 35){                   //to be removed and use a comparison between right and left distances then go to the direction of bigger distance and then,
-      if (distanceLeft <= 35)                   //you keep rotating slowly until you find a distant way and then wait for 50 microseconds to clear edges and go in that direction
-      {                                         //you can measure speed by distance and stopwatch
-        //rotate 180                            //
+    if (distanceRight <= 35){                   
+      if (distanceLeft <= 35)                   
+      {                                         
+        //rotate 180                            
         turnLeft();
         delay(500);
         moveStop();
